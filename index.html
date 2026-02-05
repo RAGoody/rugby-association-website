@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hampton Roads Rugby Association | VB Falcons, Norfolk Storm, 757 Rugby Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --falcons-blue: #003366; 
+            --storm-green: #006633; 
+            --academy-gold: #b38b00;
+            --dark: #1a1a1a; 
+            --light: #fdfdfd;
+        }
+        body { font-family: 'Roboto', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        header { 
+            background: #111;
+            color: white; text-align: center; padding: 60px 20px; font-family: 'Oswald', sans-serif; 
+        }
+        header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Three Column Grid */
+        .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 60px; }
+        .team-card { background: white; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; padding: 30px; border-top: 10px solid; }
+        
+        .falcons { border-color: var(--falcons-blue); }
+        .storm { border-color: var(--storm-green); }
+        .academy { border-color: var(--academy-gold); }
+        
+        /* Logo Styling */
+        .logo-container { height: 140px; display: flex; align-items: center; justify-content: center; margin-bottom: 20px; }
+        .logo-container img { max-height: 100%; max-width: 100%; object-fit: contain; }
+        
+        h3 { font-family: 'Oswald', sans-serif; text-transform: uppercase; font-size: 1.8rem; margin: 10px 0; }
+        .info-sec { background: #f8f9fa; padding: 15px; margin: 20px 0; border-radius: 8px; font-size: 0.95rem; }
+        
+        .schedule { list-style: none; padding: 0; font-size: 0.9rem; text-align: left; }
+        .schedule li { padding: 8px 0; border-bottom: 1px solid #f1f1f1; display: flex; justify-content: space-between; }
+
+        /* Sponsors Section */
+        .sponsors-section { text-align: center; margin-bottom: 60px; padding: 40px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .sponsors-section h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; color: #777; letter-spacing: 3px; margin-bottom: 30px; }
+        .sponsor-logos { display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap; }
+        .sponsor-logos img { max-height: 80px; filter: grayscale(100%); opacity: 0.7; transition: 0.3s; }
+        .sponsor-logos img:hover { filter: grayscale(0%); opacity: 1; }
+
+        /* Embedded Form Container */
+        .form-wrapper { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 12px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1); 
+            max-width: 800px; 
+            margin: 0 auto; 
+            text-align: center;
+        }
+        .form-wrapper h2 { font-family: 'Oswald', sans-serif; font-size: 2.5rem; margin-bottom: 20px; }
+        
+        iframe { width: 100%; height: 900px; border: none; }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            iframe { height: 1100px; } 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Hampton Roads Rugby Association</h1>
+</header>
+
+<div class="container">
+    <div class="team-grid">
+        <div class="team-card falcons">
+            <div class="logo-container">
+                <img src="https://scontent-iad3-2.xx.fbcdn.net/v/t39.30808-1/326119265_524986196129183_7888016940865634960_n.jpg?stp=c0.0.500.500a_dst-jpg_s200x200_tt6&_nc_cat=111&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=F1hk6h_BNVsQ7kNvwFZ7C1O&_nc_oc=AdlImbc09IaNGlxL4v4WpPlJMekXHqTE7b3RvD8553Ns_zoie-Sy7wFLyVK3MuLqwJY&_nc_zt=24&_nc_ht=scontent-iad3-2.xx&_nc_gid=Q69wyURYPNPobl4EVKX-qw&oh=00_Afo61PW9WB_m65i9LK2mIKsZmFQHO4ru8lknWdEqhyoPsA&oe=696728B1" alt="Virginia Beach Falcons">
+            </div>
+            <h3>Virginia Beach Falcons</h3>
+            <div class="info-sec">
+                <strong>Practices:</strong> Tues/Thurs @ 6:30 PM<br>PA Athletic Complex, VB
+            </div>
+            <ul class="schedule">
+                <li><span>Week 1</span> <span>Sept 12</span></li>
+                <li><span>Week 2</span> <span>Sept 19</span></li>
+                <li><span>Week 3</span> <span>Sept 26</span></li>
+                <li><span>Week 4</span> <span>Oct 03</span></li>
+                <li><span>Week 5</span> <span>Oct 10</span></li>
+                <li><span>Week 6</span> <span>Oct 17</span></li>
+                <li><span>Week 7</span> <span>Oct 24</span></li>
+                <li><span>Week 8</span> <span>Oct 31</span></li>
+            </ul>
+        </div>
+
+        <div class="team-card storm">
+            <div class="logo-container">
+                <img src="https://static.wixstatic.com/media/fbab03_59057bf9694d42e8ba18138a813604e7~mv2_d_2000_3093_s_2.png/v1/fill/w_75,h_116,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/fbab03_59057bf9694d42e8ba18138a813604e7~mv2_d_2000_3093_s_2.png" alt="Norfolk Storm">
+            </div>
+            <h3>Norfolk Storm</h3>
+            <div class="info-sec">
+                <strong>Practices:</strong> Mon/Wed @ 6:00 PM<br>Lafayette Park, Norfolk
+            </div>
+            <ul class="schedule">
+                <li><span>Week 1</span> <span>Sept 13</span></li>
+                <li><span>Week 2</span> <span>Sept 20</span></li>
+                <li><span>Week 3</span> <span>Sept 27</span></li>
+                <li><span>Week 4</span> <span>Oct 04</span></li>
+                <li><span>Week 5</span> <span>Oct 11</span></li>
+                <li><span>Week 6</span> <span>Oct 18</span></li>
+                <li><span>Week 7</span> <span>Oct 25</span></li>
+                <li><span>Week 8</span> <span>Nov 01</span></li>
+            </ul>
+        </div>
+
+        <div class="team-card academy">
+            <div class="logo-container">
+                <img src="https://static.wixstatic.com/media/61e717_62f476d8efc144c99c2e96e70e3d5e62~mv2.png/v1/fill/w_137,h_87,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo%20757.png" alt="757 Rugby Academy">
+            </div>
+            <h3>757 Rugby Academy</h3>
+            <div class="info-sec">
+                <strong>Practices:</strong> Saturdays @ 9:00 AM<br>Regional Training Center
+            </div>
+            <ul class="schedule">
+                <li><span>Clinic 1</span> <span>Sept 05</span></li>
+                <li><span>Clinic 2</span> <span>Sept 12</span></li>
+                <li><span>Scrimmage</span> <span>Sept 19</span></li>
+                <li><span>Tournament</span> <span>Oct 03</span></li>
+                <li><span>Workshop</span> <span>Oct 10</span></li>
+                <li><span>Invitational</span> <span>Oct 24</span></li>
+                <li><span>Academy Cup</span> <span>Nov 07</span></li>
+                <li><span>Awards</span> <span>Nov 14</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="sponsors-section">
+        <h4>Proud Supporters</h4>
+        <div class="sponsor-logos">
+            <img src="https://www.vbfighthouse.com/_next/image?url=%2Fimg%2Fvb-logo.png&w=128&q=75" alt="VB Fight House">
+        </div>
+    </section>
+
+    <div class="form-wrapper">
+        <h2>HRRA Interest Form</h2>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfO2PXwWSmsJuvzD8DJty1prYfg-L9OTCG9NCk1XhdCRSBq0w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</div>
+
+</body>
+</html>
