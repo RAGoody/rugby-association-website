@@ -10,22 +10,24 @@
             --falcons-blue: #003366; 
             --storm-green: #006633; 
             --academy-gold: #b38b00;
+            --forest-green: #0b3d2e;
             --dark: #1a1a1a; 
             --light: #fdfdfd;
         }
         body { font-family: 'Roboto', sans-serif; margin: 0; background: var(--light); color: var(--dark); line-height: 1.6; }
         
         header { 
-            background: #111;
-            color: white; text-align: center; padding: 60px 20px; font-family: 'Oswald', sans-serif; 
+            background: var(--forest-green);
+            color: var(--academy-gold);
+            text-align: center; padding: 60px 20px; font-family: 'Oswald', sans-serif; 
         }
-        header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; }
+        header h1 { font-size: 2.8rem; margin: 0; letter-spacing: 1px; text-transform: uppercase; color: inherit; font-weight:700; text-shadow: 0 1px 0 rgba(0,0,0,0.25); }
 
         .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
         
         /* Three Column Grid */
     .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; margin-bottom: 60px; position: relative; z-index: 1; }
-    .team-card { background: rgba(255,255,255,0.78); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; padding: 30px; border-top: 10px solid; }
+    .team-card { background: rgba(255,255,255,0.62); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-align: center; padding: 30px; border-top: 10px solid; }
 
     /* Background rotator wrapper (behind the team-grid) */
     .team-rotator-wrap { position: relative; }
@@ -50,7 +52,7 @@
         .schedule li { padding: 8px 0; border-bottom: 1px solid #f1f1f1; display: flex; justify-content: space-between; }
 
         /* Sponsors Section */
-        .sponsors-section { text-align: center; margin-bottom: 60px; padding: 40px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; }
+        .sponsors-section { text-align: center; margin-bottom: 60px; padding: 40px 0; border-top: 1px solid #eee; border-bottom: 1px solid #eee; background-color: var(--falcons-blue);}
         .sponsors-section h4 { font-family: 'Oswald', sans-serif; text-transform: uppercase; color: #777; letter-spacing: 3px; margin-bottom: 30px; }
         .sponsor-logos { display: flex; justify-content: center; align-items: center; gap: 50px; flex-wrap: wrap; }
         .sponsor-logos img { max-height: 80px; filter: grayscale(100%); opacity: 0.7; transition: 0.3s; }
@@ -88,11 +90,13 @@
         <div class="team-grid">
         <div class="team-card falcons">
             <div class="logo-container">
-                <img src="./images/falcons-small.png" alt="Virginia Beach Falcons">
+                <img src="./images/falcons-logo-small.png" alt="Virginia Beach Falcons">
             </div>
             <h3><a href="https://www.facebook.com/virginiabeachrugby/">Virginia Beach Falcons</a></h3>
             <div class="info-sec">
-                <strong>Practices:</strong> Tues/Thurs @ 7 PM<br>PA Athletic Complex, VB
+                <strong>Practices:</strong> Tues/Thurs @ 7 PM
+                <br>Feb 6th - Apr 18th
+                <br>PA Athletic Complex, VB
             </div>
             <ul class="schedule">
                 <li><span>Week 1</span> <span>TBD</span></li>
@@ -101,18 +105,17 @@
                 <li><span>Week 3</span> <span>TBD</span></li>
                 <li><span>Week 4</span> <span>TBD</span></li>
                 <li><span>Week 5</span> <span>TBD</span></li>
-                <li><span>Week 6</span> <span>TBD</span></li>
-                <li><span>Week 7</span> <span>TBD</span></li>
             </ul>
         </div>
 
         <div class="team-card storm">
             <div class="logo-container">
-                <img src="./images/storm-small.png" alt="Norfolk Storm">
+                <img src="./images/storm-logo-small.png" alt="Norfolk Storm">
             </div>
             <h3><a href="https://www.norfolkrugby.com/">Norfolk Storm</a></h3>
             <div class="info-sec">
-                <strong>Practices:</strong> Tues/Thurs @ 7:00 PM Feb 5th - Apr 16th
+                <strong>Practices:</strong> Tues/Thurs @ 7:00 PM
+                <br>Feb 5th - Apr 16th
                 <br>Slade Cutter Athletic Park, 100 Elementary Dr, Norfolk, VA 23551
             </div>
             <ul class="schedule">
@@ -125,11 +128,12 @@
 
         <div class="team-card academy">
             <div class="logo-container">
-                <img src="./images/757-small.png" alt="757 Rugby Academy">
+                <img src="./images/757-logo-small.png" alt="757 Rugby Academy">
             </div>
             <h3><a href="https://www.757rugbyacademy.org/">757 Rugby Academy</a></h3>
             <div class="info-sec">
-                <strong>Practices:</strong> Saturdays @ 10:00 AM - Noon Jan 17th - Apr 30th
+                <strong>Practices:</strong> Saturdays @ 10:00 AM - Noon 
+                <br>Jan 17th - Apr 30th
                 <br>Layfayette Park, Norfolk, VA  23504
             </div>
             <ul class="schedule">
@@ -149,14 +153,14 @@
     </div>
 
     <section class="sponsors-section">
-        <h4>Proud Supporters</h4>
+        <h2>Proud Supporters</h2>
         <div class="sponsor-logos">
-            <img src="https://www.vbfighthouse.com/_next/image?url=%2Fimg%2Fvb-logo.png&w=128&q=75" alt="VB Fight House">
         </div>
     </section>
 
     <div class="form-wrapper">
         <h2>HRRA Interest Form</h2>
+        <span>Data collected is transferred to a Google Sheet that is shared with officers of the particpating clubs. If you want your data removed, contact <mailto:hraragroup@gmail.com>updatewithemail</mailto:hraragroup></span>
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfO2PXwWSmsJuvzD8DJty1prYfg-L9OTCG9NCk1XhdCRSBq0w/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 </div>
